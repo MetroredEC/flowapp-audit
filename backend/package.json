@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@cloudflare/workers-types": "^4.20240418.0",
+    "itty-router": "^5.0.23",
     "jose": "^5.0.0",
     "node-fetch": "^3.3.2"
   },
