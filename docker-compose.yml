@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # Backend - Cloudflare Workers emulado localmente
+  wrangler:
+    image: node:18-alpine
+    working_dir: /app/backend
+    volumes:
+      - .:/app
+    ports:
+      - "8787:8787"
+    environment:
+      VITE_API_URL: http://localhost:8787/api
+    command: npm run dev
+    networks:
+      - audit-network
+
+  # Frontend - React dev server
+  frontend:
+    image: node:18-alpine
+    working_dir: /app/frontend
+    volumes:
+      - .:/app
+    ports:
+      - "5173:5173"
+    environment:
+      VITE_API_URL: http://localhost:8787/api
+      VITE_BASE_URL: /flowapp
+    command: npm run dev
+    networks:
+      - audit-network
+    depends_on:
+      - wrangler
+
+  # PostgreSQL (alternativa a D1 para desarrollo)
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: audit
+      POSTGRES_PASSWORD: audit123
+      POSTGRES_DB: flowapp_audit
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - audit-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U audit"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Adminer (GUI para base de datos)
+  adminer:
+    image: adminer:latest
+    ports:
+      - "8080:8080"
+    networks:
+      - audit-network
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+
+networks:
+  audit-network:
+    driver: bridge
+
+# Para usar: docker-compose up
+# Frontend: http://localhost:5173
+# Backend: http://localhost:8787
+# DB Admin: http://localhost:8080 (postgres / audit123)

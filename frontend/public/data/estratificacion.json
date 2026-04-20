@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-01-20",
+  "description": "Estratificación por especialidad para auditoría médica",
+  "specialties": {
+    "Medicina General": {
+      "minSample": 20,
+      "samplingRate": 0.15,
+      "description": "Consulta medicina general",
+      "riskLevel": "medio"
+    },
+    "Cardiología": {
+      "minSample": 15,
+      "samplingRate": 0.25,
+      "description": "Cardiología y afecciones cardiovasculares",
+      "riskLevel": "alto"
+    },
+    "Dermatología": {
+      "minSample": 10,
+      "samplingRate": 0.10,
+      "description": "Dermatología general",
+      "riskLevel": "bajo"
+    },
+    "Gastroenterología": {
+      "minSample": 15,
+      "samplingRate": 0.20,
+      "description": "Gastroenterología y endoscopia",
+      "riskLevel": "alto"
+    },
+    "Neurología": {
+      "minSample": 15,
+      "samplingRate": 0.25,
+      "description": "Neurología y afecciones neurológicas",
+      "riskLevel": "alto"
+    },
+    "Oftalmología": {
+      "minSample": 10,
+      "samplingRate": 0.12,
+      "description": "Oftalmología",
+      "riskLevel": "bajo"
+    },
+    "Otorrinolaringología": {
+      "minSample": 10,
+      "samplingRate": 0.12,
+      "description": "Otorrinolaringología",
+      "riskLevel": "bajo"
+    },
+    "Traumatología": {
+      "minSample": 15,
+      "samplingRate": 0.18,
+      "description": "Traumatología y ortopedia",
+      "riskLevel": "medio"
+    },
+    "Cirugía General": {
+      "minSample": 20,
+      "samplingRate": 0.30,
+      "description": "Cirugía general",
+      "riskLevel": "alto"
+    },
+    "Ginecología": {
+      "minSample": 15,
+      "samplingRate": 0.22,
+      "description": "Ginecología y obstetricia",
+      "riskLevel": "alto"
+    }
+  },
+  "centers": {
+    "CM KENNEDY": "Quito",
+    "CM CONDADO": "Quito",
+    "CM CUMBAYA": "Quito",
+    "CM QUICENTRO SUR": "Quito",
+    "CM NORTE": "Quito",
+    "CM GUAYAQUIL": "Guayaquil",
+    "CM SAMBORONDON": "Guayaquil",
+    "CM SALINAS": "Salinas",
+    "CM PORTOVIEJO": "Portoviejo",
+    "CM MANTA": "Manta",
+    "CM IBARRA": "Ibarra"
+  },
+  "auditMetadata": {
+    "version": "1",
+    "effectiveDate": "2025-01-01",
+    "nextReview": "2025-12-31"
+  }
+}

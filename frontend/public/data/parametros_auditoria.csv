@@ -1,0 +1,21 @@
+id,nombre,descripcion,categoria,aplicable_a
+1,Signos vitales completos,Se registraron TA PA FC FR SO2,Anamnesis,Todas
+2,Antecedentes clínicos,Se documentan patologías previas,Anamnesis,Todas
+3,Medicamentos actuales,Se lista medicamentación actual,Anamnesis,Todas
+4,Alergias documentadas,Se documenta alergia a medicamentos,Anamnesis,Todas
+5,Examen físico completo,Realizado y documentado,Examen Físico,Todas
+6,Palpación abdominal,Se realizó palpación abdominal,Examen Físico,Gastroentertología
+7,Presión arterial correcta,TA registrada sin error,Examen Físico,Todas
+8,Diagnóstico principal,Documentado según CIE-10,Diagnóstico,Todas
+9,Diagnósticos secundarios,Registrados cuando aplique,Diagnóstico,Todas
+10,Justificación diagnóstica,Correlación clínica documentada,Diagnóstico,Todas
+11,Solución terapéutica,Plan de tratamiento establecido,Tratamiento,Todas
+12,Medicamentos pertinentes,Acorde al diagnóstico,Tratamiento,Todas
+13,Dosis apropiadas,Según protocolo institucional,Tratamiento,Todas
+14,Laboratorios ordenados,Pertinentes al diagnóstico,Exámenes,Todas
+15,Imágenes apropiadas,Necesarias para confirmación,Exámenes,Todas
+16,Prescripción clara,Legible y completa,Prescripción,Todas
+17,Instrucciones al paciente,Comprensibles y documentadas,Prescripción,Todas
+18,Seguimiento establecido,Se indica cita de control,Seguimiento,Todas
+EOF
+cat /home/claude/flowapp-audit/frontend/public/data/parametros_auditoria.csv
