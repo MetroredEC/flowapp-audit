@@ -4,7 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VITE_BASE_URL || '/flowapp/',
+  base: process.env.VITE_BASE_URL || '/flowapp-audit/',
   server: {
     port: 5173,
     proxy: {
