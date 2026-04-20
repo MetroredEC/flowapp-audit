@@ -1,0 +1,29 @@
+{
+  "name": "flowapp-audit",
+  "version": "1.0.0",
+  "description": "Sistema integral de auditoría médica",
+  "private": true,
+  "scripts": {
+    "setup": "bash setup.sh",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:deploy": "cd backend && npm run deploy",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:deploy": "cd frontend && npm run deploy",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "build": "npm run frontend:build",
+    "deploy": "npm run backend:deploy && npm run frontend:deploy"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "medical-audit",
+    "healthcare",
+    "quality-assurance",
+    "cloudflare",
+    "react"
+  ],
+  "author": "Metrored Centros Médicos",
+  "license": "PROPRIETARY"
+}

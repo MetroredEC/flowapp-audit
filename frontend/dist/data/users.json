@@ -1,0 +1,83 @@
+{
+  "users": [
+    {
+      "id": "user-auditor-1",
+      "entra_id": "user-1@metrored.onmicrosoft.com",
+      "username": "auditor1@metrored.com",
+      "name": "Dr. Juan Carlos García",
+      "email": "auditor1@metrored.com",
+      "roles": ["Auditor"],
+      "specialty": "Medicina General",
+      "center": "CM Kennedy",
+      "status": "activo"
+    },
+    {
+      "id": "user-auditor-2",
+      "entra_id": "user-2@metrored.onmicrosoft.com",
+      "username": "auditor2@metrored.com",
+      "name": "Dra. María López Pérez",
+      "email": "auditor2@metrored.com",
+      "roles": ["Auditor"],
+      "specialty": "Cardiología",
+      "center": "CM Cumbayá",
+      "status": "activo"
+    },
+    {
+      "id": "user-auditor-3",
+      "entra_id": "user-3@metrored.onmicrosoft.com",
+      "username": "auditor3@metrored.com",
+      "name": "Dr. Roberto Sánchez",
+      "email": "auditor3@metrored.com",
+      "roles": ["Auditor"],
+      "specialty": "Cirugía General",
+      "center": "CM Condado",
+      "status": "activo"
+    },
+    {
+      "id": "user-admin-1",
+      "entra_id": "admin-1@metrored.onmicrosoft.com",
+      "username": "admin@metrored.com",
+      "name": "Dr. Gerente Médico",
+      "email": "admin@metrored.com",
+      "roles": ["Admin"],
+      "specialty": null,
+      "center": "Administración",
+      "status": "activo"
+    },
+    {
+      "id": "user-supervisor-1",
+      "entra_id": "supervisor-1@metrored.onmicrosoft.com",
+      "username": "supervisor@metrored.com",
+      "name": "Lic. Supervisor",
+      "email": "supervisor@metrored.com",
+      "roles": ["Admin"],
+      "specialty": null,
+      "center": "Administración",
+      "status": "activo"
+    }
+  ],
+  "auditRoles": [
+    {
+      "id": "auditor",
+      "name": "Auditor Médico",
+      "permissions": [
+        "view_assigned_records",
+        "perform_audit",
+        "generate_report",
+        "view_feedback"
+      ]
+    },
+    {
+      "id": "admin",
+      "name": "Administrador",
+      "permissions": [
+        "view_all_records",
+        "manage_users",
+        "manage_assignments",
+        "generate_reports",
+        "system_configuration",
+        "view_audit_logs"
+      ]
+    }
+  ]
+}

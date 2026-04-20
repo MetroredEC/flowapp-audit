@@ -1,0 +1,72 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-01-20",
+  "centers": {
+    "CM KENNEDY": {
+      "name": "Centro Médico Kennedy",
+      "city": "Quito",
+      "province": "Pichincha",
+      "region": "Sierra"
+    },
+    "CM CONDADO": {
+      "name": "Centro Médico Condado",
+      "city": "Quito",
+      "province": "Pichincha",
+      "region": "Sierra"
+    },
+    "CM CUMBAYA": {
+      "name": "Centro Médico Cumbayá",
+      "city": "Quito",
+      "province": "Pichincha",
+      "region": "Sierra"
+    },
+    "CM QUICENTRO SUR": {
+      "name": "Centro Médico Quicentro Sur",
+      "city": "Quito",
+      "province": "Pichincha",
+      "region": "Sierra"
+    },
+    "CM NORTE": {
+      "name": "Centro Médico Norte",
+      "city": "Quito",
+      "province": "Pichincha",
+      "region": "Sierra"
+    },
+    "CM GUAYAQUIL": {
+      "name": "Centro Médico Guayaquil",
+      "city": "Guayaquil",
+      "province": "Guayas",
+      "region": "Costa"
+    },
+    "CM SAMBORONDON": {
+      "name": "Centro Médico Samborondón",
+      "city": "Guayaquil",
+      "province": "Guayas",
+      "region": "Costa"
+    },
+    "CM SALINAS": {
+      "name": "Centro Médico Salinas",
+      "city": "Salinas",
+      "province": "Santa Elena",
+      "region": "Costa"
+    },
+    "CM PORTOVIEJO": {
+      "name": "Centro Médico Portoviejo",
+      "city": "Portoviejo",
+      "province": "Manabí",
+      "region": "Costa"
+    },
+    "CM MANTA": {
+      "name": "Centro Médico Manta",
+      "city": "Manta",
+      "province": "Manabí",
+      "region": "Costa"
+    },
+    "CM IBARRA": {
+      "name": "Centro Médico Ibarra",
+      "city": "Ibarra",
+      "province": "Imbabura",
+      "region": "Sierra"
+    }
+  }
+}
